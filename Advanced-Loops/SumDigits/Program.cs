@@ -11,14 +11,14 @@ namespace SumDigits
         static void Main(string[] args)
         {
             var n = int.Parse(Console.ReadLine());
-            var ed = 0;
+            var units = 0;
             var sum = 0;
             
             while (n >= 1)
             {
-                ed = n % 10;
+                units = n % 10;
                 n = n / 10;
-                var temp = ed;
+                var temp = units;
                 sum += temp;
             }
             Console.WriteLine(sum);
